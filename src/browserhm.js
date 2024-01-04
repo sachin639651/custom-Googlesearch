@@ -13,8 +13,11 @@ setsearch(value)
 
   return (
     <>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <div id='home-header'>
-    <div id='home-profile-container'></div>
+    <div id='home-profile-container'>
+    <i class="glyphicon usericon glyphicon-user"></i>
+    </div>
       <div id='menu-icon-container'>
         <img src={Menu}></img>
       </div>
@@ -27,7 +30,12 @@ setsearch(value)
     <div id='home-body'>
     <div id='home-body-container'>
       <div id='home-icon-image-container'>
-        <img id='home-icon-image' src={icon}></img>
+        {/* <img id='home-icon-image' src={icon}></img> */}
+
+        <div id='home-icon-title-container' >
+        <div id='home-icon-title'>Search</div>
+        </div>
+      
       </div>
       <div id='search-bar-container'>
       <input id='home-search-input' onKeyUp={(e)=>{if(e.key=="Enter" && search.length>0){
@@ -39,7 +47,6 @@ setsearch(value)
     </div>
     <div id='home-futer'>
       <div style={{"marginRight":"1%"}}>© All rights Reserved</div>
-    <b>Gosekplay</b>
     <div style={{"marginLeft":"1%","cursor":"pointer","color":"blueviolet"}} onClick={()=>{navigate('/term&condition')}} >Term & Conditions</div>
      </div>
     
