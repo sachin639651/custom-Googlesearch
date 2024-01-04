@@ -39,7 +39,7 @@ setsearch(value)
       </div>
       <div id='search-bar-container'>
       <input id='home-search-input' onKeyUp={(e)=>{if(e.key=="Enter" && search.length>0){
-        navigate(`/query/${search}`)
+        navigate(`/custom-Googlesearch/query/${search}`)
       }}} placeholder='Search' onChange={(e)=>{handelsearch(e)}} value={search}></input>
       <button id="home-search-button" onClick={()=>{navigate(`/query/${search}`)}}>Search</button>
       </div>

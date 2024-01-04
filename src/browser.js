@@ -70,13 +70,13 @@ const searchtypeimage=useRef()
 <div id="header">
   <div id='content-container'>
 <div id='logo-container' onClick={()=>{
-  navigate('/')
+  navigate('/custom-Googlesearch/')
 }}>
 <img id='logo-img' src={Logo}></img>
 </div>
 <div id='searchbar-container'>
   <input id='search-bar-input' onChange={(e)=>{handelsearchinput(e)}} onKeyUp={(e)=>{if(e.key=="Enter" && searchvalue.length>0){
-       navigate(`/query/${searchvalue}`)
+       navigate(`/custom-Googlesearch/query/${searchvalue}`)
        if(searchtype=="all"){
         settype("")
       }
@@ -86,7 +86,7 @@ const searchtypeimage=useRef()
       }}} value={searchvalue} placeholder='Search'></input>
   <div id='Search-button' onClick={()=>{
     if(searchvalue.length>0){
-      navigate(`/query/${searchvalue}`)
+      navigate(`/custom-Googlesearch/query/${searchvalue}`)
       if(searchtype=="all"){
         settype("")
       }

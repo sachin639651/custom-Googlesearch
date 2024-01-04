@@ -10,9 +10,9 @@ function App() {
      <>
      
      <Routes>
-     <Route path="/" element={[ <Browserhm/>]}/>
-     <Route path="/query/:query" element={[ <Browser/>]}/>
-     <Route path="/term&condition" element={[ <TC/>]}/>
+     <Route path="/custom-Googlesearch/" element={[ <Browserhm/>]}/>
+     <Route path="/custom-Googlesearch/query/:query" element={[ <Browser/>]}/>
+     <Route path="/custom-Googlesearch/term&condition" element={[ <TC/>]}/>
      </Routes>
      
      
