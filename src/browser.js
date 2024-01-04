@@ -32,7 +32,7 @@ const[image,setimage]=useState([]);
 
 const getdata=async()=>{
 
-    await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAAyX8HHOTGmg5IERi9TSy3TNpMNBl9Zlo&cx=27eb7d7b808234349&q=${query}${type}&start=0`,{
+    await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=27eb7d7b808234349&q=${query}${type}&start=0`,{
       method:"get",
       headers:{
         Accept:"application/json",
